@@ -21,6 +21,50 @@ To operate grove sensors, the grove.py depends on the smbus2 hardware interface 
 
 <br><br>
 # Installation
+
+## Install prerequirest
+
+```shell
+sudo apt update
+sudo apt install git build-essential swig python3-dev cmake libjson-c-dev
+
+```
+## build && install mraa
+
+```shell
+cd ~/
+git clone https://github.com/peterpanstechland/mraa.git
+cd mraa
+mkdir build
+cd build/
+cmake -DBUILDSWIGNODE=OFF ..
+make
+sudo make install
+sudo ldconfig
+```
+
+## build && install upm
+
+```shell
+cd ~/
+git clone https://github.com/peterpanstechland/upm.git
+cd upm/
+mkdir build
+cd build/
+cmake ..
+make
+sudo make install
+sudo ldconfig
+```
+
+## install grove.py
+```shell
+git clone https://github.com/peterpanstechland/grove.py
+cd grove.py
+sudo pip3 install .
+```
+
+# OLD Installation Steps
 For beginner or library user only, please install with online method.<br>
 For developer or advanced user, please install [dependencies](doc/INSTALL.md#install-dependencies)
 and then install grove.py with [source code](#install-grovepy).
