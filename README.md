@@ -68,11 +68,11 @@ sudo pip3 install .
 
 **known issue 1: 
 pyupm_mcp9808 caused some problem please change to import upm.pyupm_mcp9808 as MCP9808 at
-sudo nano /usr/local/lib/python3.9/dist-packages/grove/temperature/mcp9808.py
+```sudo nano /usr/local/lib/python3.9/dist-packages/grove/temperature/mcp9808.py```
 
 **known issue 2:
 display library issue please change to import upm.pyupm_lcd at
-sudo nano /usr/local/lib/python3.9/dist-packages/grove/display/__init__.py
+```sudo nano /usr/local/lib/python3.9/dist-packages/grove/display/__init__.py```
 
 # OLD Installation Steps
 For beginner or library user only, please install with online method.<br>
