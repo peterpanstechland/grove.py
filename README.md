@@ -22,7 +22,7 @@ To operate grove sensors, the grove.py depends on the smbus2 hardware interface 
 <br><br>
 # Installation
 
-## Install prerequirest
+## Install prerequisites
 
 ```shell
 sudo apt update
